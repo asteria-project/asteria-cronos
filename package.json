@@ -1,6 +1,6 @@
 {
   "name": "asteria-cronos",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Cronos provides a set of Asteria modules that can be deployed within a Node.js environment.",
   "main": "dist/com/asteria/cronos.index.js",
   "types": "types/cronos.d.ts",
@@ -14,8 +14,8 @@
   },
   "homepage": "https://github.com/asteria-cronos/asteria-cronos#readme",
   "dependencies": {
-    "asteria-gaia": "^0.2.0",
-    "asteria-ouranos": "^0.2.0"
+    "asteria-gaia": "^0.3.0",
+    "asteria-ouranos": "^0.3.0"
   },
   "devDependencies": {
     "@types/node": "^12.0.0",
