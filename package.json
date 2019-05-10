@@ -1,0 +1,28 @@
+{
+  "name": "asteria-cronos",
+  "version": "0.2.0",
+  "description": "Cronos provides a set of Asteria modules that can be deployed within a Node.js environment.",
+  "main": "dist/com/asteria/cronos.index.js",
+  "types": "types/cronos.d.ts",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "Pascal ECHEMANN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asteria-cronos/asteria-cronos/issues"
+  },
+  "homepage": "https://github.com/asteria-cronos/asteria-cronos#readme",
+  "dependencies": {
+    "asteria-gaia": "^0.2.0",
+    "asteria-ouranos": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.0",
+    "grunt": "^1.0.4",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-ts": "^6.0.0-beta.22",
+    "typescript": "^3.4.5"
+  }
+}
