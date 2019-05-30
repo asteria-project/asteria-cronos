@@ -14,8 +14,8 @@
   },
   "homepage": "https://github.com/asteria-cronos/asteria-cronos#readme",
   "dependencies": {
-    "asteria-gaia": "^0.3.0",
-    "asteria-ouranos": "^0.3.0"
+    "asteria-gaia": "^0.4.0",
+    "asteria-ouranos": "^0.4.0"
   },
   "devDependencies": {
     "@types/node": "^12.0.0",
