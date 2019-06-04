@@ -74,7 +74,7 @@ export class CsvToListStream extends CronosTransformStream implements AsteriaStr
      * 
      * @param {string} csvArr the reference to the CSV input array.
      * 
-     * @return {Array<any>} a list of marshaled rows.
+     * @returns {Array<any>} a list of marshaled rows.
      */
     private buildResultData(csvArr: Array<string>): string {
         let result: string = CommonChar.EMPTY;
@@ -97,7 +97,7 @@ export class CsvToListStream extends CronosTransformStream implements AsteriaStr
      * 
      * @param {string} csvRow a string that represents a CSV row.
      * 
-     * @return {any} a vanilla JavaScript object created from a CSV row, or <code>null</code> whether the specified row
+     * @returns {any} a vanilla JavaScript object created from a CSV row, or <code>null</code> whether the specified row
      *               is empty.
      */
     private buildObj(csvRow: string): any {
@@ -126,7 +126,7 @@ export class CsvToListStream extends CronosTransformStream implements AsteriaStr
      * 
      * @param {string} data the string representation fo the CSV input.
      * 
-     * @return {Array<string>} an array composed of each row of the CSV input.
+     * @returns {Array<string>} an array composed of each row of the CSV input.
      */
     private buildCsvArray(data: string): Array<string> {
         const arr: Array<string> = data.split(CommonRegExp.NEW_LINE);

@@ -65,7 +65,7 @@ export class FilterStream extends CronosTransformStream implements AsteriaStream
      * 
      * @param {string} data the string representation fo the Asteria input.
      * 
-     * @return {Array<string>} an array composed of each object of the Asteria input.
+     * @returns {Array<string>} an array composed of each object of the Asteria input.
      */
     private buildJsonArray(data: string): Array<string> {
         return data.split(CommonRegExp.NEW_LINE);

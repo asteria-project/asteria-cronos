@@ -68,7 +68,7 @@ export class LinesToListStream extends CronosTransformStream implements AsteriaS
      * 
      * @param {string} input the input string to check.
      * 
-     * @return {boolean} <code>true</code> whether the last character of the input string is a new line character;
+     * @returns {boolean} <code>true</code> whether the last character of the input string is a new line character;
      *                   <code>false</code> otherwise.
      */
     private checkFinalChar(input: string): boolean {
@@ -84,7 +84,7 @@ export class LinesToListStream extends CronosTransformStream implements AsteriaS
      * @param {boolean} lastLineComplete indicates whether the last line of the input data is complete
      *                                   (<code>true</code>), or not (<code>false</code>).
      * 
-     * @return {string} a string composed of Asteria list objects.
+     * @returns {string} a string composed of Asteria list objects.
      */
     private buildAsteriaList(data: Array<string>, lastLineComplete: boolean): string {
         let result: string = CommonChar.EMPTY;

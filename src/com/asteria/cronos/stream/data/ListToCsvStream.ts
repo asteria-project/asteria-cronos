@@ -71,7 +71,7 @@ export class ListToCsvStream extends CronosTransformStream implements AsteriaStr
      * 
      * @param {Array<any>} data the list of Asteria POJOs to transform into CSV format.
      * 
-     * @return {string} a well-formed CSV string based on the input data.
+     * @returns {string} a well-formed CSV string based on the input data.
      */
     private buildResultData(data: Array<any>): string {
         let result: string = CommonChar.EMPTY;
@@ -92,7 +92,7 @@ export class ListToCsvStream extends CronosTransformStream implements AsteriaStr
      * 
      * @param {any} obj an Asteria POJO.
      * 
-     * @return {string} a string that represents a CSV row.
+     * @returns {string} a string that represents a CSV row.
      */
     private buildCsv(obj: any): string {
         let row: string = CommonChar.EMPTY;
@@ -108,7 +108,7 @@ export class ListToCsvStream extends CronosTransformStream implements AsteriaStr
      * 
      * @param {string} data the string representation fo the Asteria input.
      * 
-     * @return {Array<string>} an array composed of each POJO of the Asteria input.
+     * @returns {Array<string>} an array composed of each POJO of the Asteria input.
      */
     private buildPojosArray(data: string): Array<any> {
         const arr: Array<any> = new Array<any>();
