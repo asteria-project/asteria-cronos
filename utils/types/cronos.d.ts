@@ -8,7 +8,7 @@
 declare module "asteria-cronos" {
 
 import { AbstractAsteriaObject, AsteriaSessionConfig, AsteriaSession, StreamProcessConfig, StreamProcess, AsteriaContext, AsteriaLogger, StreamProcessor, FilterOperator, AsteriaFilter, FilterOperatorNotation, AsteriaStream, AsteriaErrorCode, StreamProcessBuilder, AsteriaError, AsteriaLogLevel, FilterCondition, FilterDefinition, StreamProcessType } from "asteria-gaia";
-import { TransformOptions, Transform, TransformCallback } from "stream";
+import { TransformOptions, Transform, TransformCallback, Readable } from "stream";
 import { ReadStream, WriteStream } from "fs";
     
 /*PLACEHOLDER*/}
