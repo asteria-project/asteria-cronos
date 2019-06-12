@@ -12,6 +12,7 @@ export { LinesToListConfig } from './cronos/config/data/LinesToListConfig';
 export { ListToCsvConfig } from './cronos/config/data/ListToCsvConfig';
 
 //--> com/asteria/cronos/config/file
+export { CsvPreviewConfig } from './cronos/config/file/CsvPreviewConfig';
 export { FileReaderConfig } from './cronos/config/file/FileReaderConfig';
 export { FileWriterConfig } from './cronos/config/file/FileWriterConfig';
 
@@ -25,6 +26,7 @@ export { LinesToListProcess } from './cronos/process/data/LinesToListProcess';
 export { ListToCsvProcess } from './cronos/process/data/ListToCsvProcess';
 
 //--> com/asteria/cronos/process/file
+export { CsvPreviewProcess } from './cronos/process/file/CsvPreviewProcess';
 export { FileReaderProcess } from './cronos/process/file/FileReaderProcess';
 export { FileWriterProcess } from './cronos/process/file/FileWriterProcess';
 
@@ -35,6 +37,7 @@ export { LinesToListStream } from './cronos/stream/data/LinesToListStream';
 export { ListToCsvStream } from './cronos/stream/data/ListToCsvStream';
 
 //--> com/asteria/cronos/stream/file
+export { CsvPreviewStream } from './cronos/stream/file/CsvPreviewStream';
 export { FileReaderStream } from './cronos/stream/file/FileReaderStream';
 export { FileWriterStream } from './cronos/stream/file/FileWriterStream';
 
