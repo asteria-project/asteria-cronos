@@ -95,5 +95,6 @@ export class CsvPreviewStream extends Readable implements AsteriaStream {
         const preview: string = this._csvRows.join(CommonChar.NEW_LINE);
         this.push(preview);
         this.push(null);
+        this.destroy();
     }
 }

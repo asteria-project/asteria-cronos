@@ -49,6 +49,7 @@ class CsvPreviewStream extends stream_1.Readable {
         const preview = this._csvRows.join(asteria_gaia_1.CommonChar.NEW_LINE);
         this.push(preview);
         this.push(null);
+        this.destroy();
     }
 }
 CsvPreviewStream.CLASS_NAME = 'com.asteria.cronos.stream.file::CsvPreviewStream';
