@@ -20,28 +20,28 @@ export class FileWriterProcess extends AbstractAsteriaObject implements StreamPr
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public getConfig(): FileWriterConfig {
         return this._config;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public setConfig(config: FileWriterConfig): void {
         this._config = config;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public getType(): StreamProcessType {
         return StreamProcessType.READABLE;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public create(context: AsteriaContext): AsteriaStream {
         const stream: FileWriterStream = new FileWriterStream(this._config.path);

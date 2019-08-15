@@ -20,28 +20,28 @@ export class FilterProcess extends AbstractAsteriaObject implements StreamProces
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public getConfig(): FilterConfig {
         return this._config;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public setConfig(config: FilterConfig): void {
         this._config = config;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public getType(): StreamProcessType {
         return StreamProcessType.TRANSFORM;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public create(context: AsteriaContext): AsteriaStream {
         const stream: AsteriaStream = new FilterStream();

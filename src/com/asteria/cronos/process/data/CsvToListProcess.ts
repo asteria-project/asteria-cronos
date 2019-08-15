@@ -20,28 +20,28 @@ export class CsvToListProcess extends AbstractAsteriaObject implements StreamPro
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public getConfig(): CsvToListConfig {
         return this._config;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public setConfig(config: CsvToListConfig): void {
         this._config = config;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public getType(): StreamProcessType {
         return StreamProcessType.TRANSFORM;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public create(context: AsteriaContext): AsteriaStream {
         const stream: AsteriaStream = new CsvToListStream();

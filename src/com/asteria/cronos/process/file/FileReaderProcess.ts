@@ -20,28 +20,28 @@ export class FileReaderProcess extends AbstractAsteriaObject implements StreamPr
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public getConfig(): FileReaderConfig {
         return this._config;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public setConfig(config: FileReaderConfig): void {
         this._config = config;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public getType(): StreamProcessType {
         return StreamProcessType.READABLE;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public create(context: AsteriaContext): AsteriaStream {
         const stream: FileReaderStream = new FileReaderStream(this._config.path);

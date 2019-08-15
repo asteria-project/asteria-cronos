@@ -20,28 +20,28 @@ export class LinesToListProcess extends AbstractAsteriaObject implements StreamP
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public getConfig(): LinesToListConfig {
         return this._config;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public setConfig(config: LinesToListConfig): void {
         this._config = config;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public getType(): StreamProcessType {
         return StreamProcessType.TRANSFORM;
     }
 
     /**
-     * @implements
+     * @inheritdoc
      */
     public create(context: AsteriaContext): AsteriaStream {
         const stream: AsteriaStream = new LinesToListStream();
