@@ -1,4 +1,5 @@
-import { AsteriaContext, StreamProcessor } from 'asteria-gaia';
+import { AsteriaContext, StreamProcessor, AsteriaLogger } from 'asteria-gaia';
+import { OuranosLogger } from 'asteria-ouranos';
 
 /**
  * A basic <code>AsteriaContext</code> implementation for unit testing.
@@ -24,5 +25,12 @@ export class AsteriaContextImpl implements AsteriaContext {
      */
     public getProcessor(): StreamProcessor {
         return null;
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public getLogger(): AsteriaLogger {
+        return OuranosLogger.getLogger();
     }
 }
