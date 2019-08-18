@@ -51,6 +51,19 @@ describe('FilterStream class test', ()=> {
     });
 
     describe('#transform()', ()=> {
+        it('should invoke the onComplete() method', (done: Function)=> {
+            utils.loadData((data: any)=> {
+                const stream: any = new FilterStream();
+                stream.onComplete = (err: any, result: any)=> {};
+                const spy: any = sinon.spy(stream, 'onComplete');
+                stream.init(utils.getConfig(null, [utils.FILTER_1]), utils.CONTEXT);
+                stream.transform(data);
+                sinon.assert.called(spy);
+                sinon.restore();
+                done();
+            });
+        });
+
         it('should apply correctly single filter when condition is FilterCondition.OR', (done: Function)=> {
             utils.loadData((data: any)=> {
                 const stream: any = new FilterStream();
