@@ -61,5 +61,3 @@ test/**/*.js
 
 # Ignore JavaScript files in utils folder
 utils/**/*.js
-# Ignore temporary test files in utils folder
-utils/**/temp.csv
