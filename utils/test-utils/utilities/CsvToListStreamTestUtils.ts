@@ -9,6 +9,7 @@ import { CsvToListStream } from '../../../src/com/asteria/cronos/stream/data/Csv
 // Utilities:
 export const CLASS_NAME: string = 'com.asteria.cronos.stream.data::CsvToListStream';
 export const ITEMS_NUM: number = 201;
+export const MAPPING_NUM: number = 8;
 export const getConfig: Function = function(separator: string = ';', colsMapping: Array<CsvColumnMapper> = null,
                                             excludedCols: Array<number> = null): CsvToListConfig {
     return { separator: separator, colsMapping: colsMapping, excludedCols: excludedCols };

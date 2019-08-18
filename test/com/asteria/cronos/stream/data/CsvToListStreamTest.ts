@@ -75,6 +75,7 @@ describe('CsvToListStream class test', ()=> {
                 stream.init(config, null);
                 stream.transform(data);
                 const mappingRefs: Array<CsvColumnMapper> = utils.getMappingRefs(stream);
+                expect(mappingRefs.length).to.equal(utils.MAPPING_NUM);
                 mappingRefs.forEach((item: CsvColumnMapper, index: number)=> {
                     expect(item.property).to.equal(utils.DEFAULT_PROPS[index]);
                     expect(item.index).to.equal(index);
@@ -83,7 +84,7 @@ describe('CsvToListStream class test', ()=> {
             });
         });
         
-        it('should create as many object as lines into the dataset: last line is always empty', (done: Function)=> {
+        it('should create as many objects as lines into the dataset: last line is always empty', (done: Function)=> {
             DataLoader.loadData((data: any)=> {
                 const stream: any = new CsvToListStream();
                 const config: CsvToListConfig = utils.getConfig(CommonChar.SEMICOLON);
